@@ -111,7 +111,7 @@ def go(config: DictConfig):
                 'main',
                 env_manager='conda',
                 parameters={
-                    'trainval_artifact': 'clean_sample.csv:latest',
+                    'trainval_artifact': 'trainval_data.csv:latest',
                     'val_size': str(config['modeling']['val_size']),
                     'random_seed': str(config['modeling']['random_seed']),
                     'stratify_by': config['modeling']['stratify_by'],
